@@ -5,13 +5,45 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import android.media.MediaPlayer;
+import android.widget.Toast;
 
 public class HomeActivity extends Activity {
+    MediaPlayer mp;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+//        mp = MediaPlayer.create(this, R.raw.shawty1);
+
+    }
+
+    /*
+    * Plays the longer shawtayy
+    * */
+
+    public void shawtayOne(Void v){
+        mp = MediaPlayer.create(this, R.raw.shawty1);
+        mp.start();
+        mp.release();
+        Toast hi = Toast.makeText(this, "one", Toast.LENGTH_SHORT);
+        hi.show();
+    }
+    public void shawtayTwo(Void v){
+        mp = MediaPlayer.create(this, R.raw.shawty1);
+        mp.start();
+        mp.release();
+        Toast hi = Toast.makeText(this, "two", Toast.LENGTH_SHORT);
+        hi.show();
+    }
+    public void shawtayThree(Void v){
+        mp = MediaPlayer.create(this, R.raw.shawty1);
+        mp.start();
+        mp.release();
+        Toast hi = Toast.makeText(this, "three", Toast.LENGTH_SHORT);
+        hi.show();
     }
 
 
