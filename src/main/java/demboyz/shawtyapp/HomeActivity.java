@@ -6,6 +6,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import android.media.MediaPlayer;
+import android.view.View;
 import android.widget.Toast;
 
 public class HomeActivity extends Activity {
@@ -24,24 +25,24 @@ public class HomeActivity extends Activity {
     * Plays the longer shawtayy
     * */
 
-    public void shawtayOne(Void v){
-        mp = MediaPlayer.create(this, R.raw.shawty1);
+    public void shawtayOne(View v){
+        mp = MediaPlayer.create(this, R.raw.shawty2);
         mp.start();
-        mp.release();
+//        mp.release();
         Toast hi = Toast.makeText(this, "one", Toast.LENGTH_SHORT);
         hi.show();
     }
-    public void shawtayTwo(Void v){
+    public void shawtayTwo(View v){
         mp = MediaPlayer.create(this, R.raw.shawty1);
         mp.start();
-        mp.release();
+//        mp.release();
         Toast hi = Toast.makeText(this, "two", Toast.LENGTH_SHORT);
         hi.show();
     }
-    public void shawtayThree(Void v){
+    public void shawtayThree(View v){
         mp = MediaPlayer.create(this, R.raw.shawty1);
         mp.start();
-        mp.release();
+//        mp.release();
         Toast hi = Toast.makeText(this, "three", Toast.LENGTH_SHORT);
         hi.show();
     }
