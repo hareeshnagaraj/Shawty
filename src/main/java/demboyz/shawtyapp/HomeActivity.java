@@ -27,24 +27,27 @@ public class HomeActivity extends Activity {
 
     public void shawtayOne(View v){
         mp = MediaPlayer.create(this, R.raw.shawty2);
+//        mp.release();
         mp.start();
 //        mp.release();
-        Toast hi = Toast.makeText(this, "one", Toast.LENGTH_SHORT);
-        hi.show();
     }
     public void shawtayTwo(View v){
         mp = MediaPlayer.create(this, R.raw.shawty1);
+//        mp.release();
         mp.start();
 //        mp.release();
-        Toast hi = Toast.makeText(this, "two", Toast.LENGTH_SHORT);
-        hi.show();
     }
     public void shawtayThree(View v){
-        mp = MediaPlayer.create(this, R.raw.shawty1);
+        mp = MediaPlayer.create(this, R.raw.shawty3);
+//        mp.release();
         mp.start();
 //        mp.release();
-        Toast hi = Toast.makeText(this, "three", Toast.LENGTH_SHORT);
-        hi.show();
+    }
+
+    public void groceries(View v){
+        mp = MediaPlayer.create(this, R.raw.groceries);
+        mp.start();
+//        mp.release();
     }
 
 
